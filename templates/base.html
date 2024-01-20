@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+
+<body>
+
+    <header>
+        <div class="nav-left">
+            <h1><a href="{% url 'home'%}">Mi blog</a></h1>
+        </div>
+
+
+        <div class="nav-rigth">
+            <h1><a href="{% url 'post_new' %}">+ New Post</h1>
+        </div>
+    </header>
+
+    {% block content %}
+
+    {% endblock content %}
+
+    <footer>
+        <a href="fmrondon14@gmail.com">contactame!</a>
+    </footer>
+
+    <body>
+
+    </body>
